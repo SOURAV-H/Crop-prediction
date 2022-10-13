@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<form>
+   <input type="text" id="number" value="0"/>
+   <input type="button" onclick="incrementValue()" value="Increment Value" />
+</form>
+
+
+<table style="color:black;">
+    
+    <tr>
+        <th class="col-md-1"> </th>
+        <th class="col-md-2">N</th>
+        <th class="col-md-3">P</th>
+        <th class="col-md-3">K</th>
+        <th class="col-md-3">SM</th>
+        <th class="col-md-3">pH</th>
+      </tr>
+      <tr>
+        <td class="col-md-1">R1</td>
+        <td class="col-md-2" id="r1_1"></td>
+        <td class="col-md-3" id="r1_2"></td>
+        <td class="col-md-3" id="r1_3"></td>
+        <td class="col-md-3"  id="r1_4"></td>
+        <td class="col-md-3"  id="r1_5"></td>
+      </tr>
+      <tr>
+        <td class="col-md-1" >R2</td>
+        <td class="col-md-2" id="r2_1"></td>
+        <td class="col-md-3" id="r2_2"></td>
+        <td class="col-md-3" id="r2_3"></td>
+        <td class="col-md-3"  id="r2_4"></td>
+        <td class="col-md-3"  id="r2_5"></td>
+      </tr>
+</table>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+        $.ajax({
+            url:"https://api.thingspeak.com/channels/1708995/feeds.json?api_key=405PTV83G7TFC7AU&results=2",
+            dataType:"json",
+            success:function(data){
+              
+                $(data.channel).each(function(value){
+                  var feeds=data.feeds;
+                });                
+            }
+        }); 
+    });
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+
+    if(value==1){
+    document.getElementById('r1_1').innerHTML="hello";
+}
+   else if(value==2){
+    document.getElementById('r2_1').innerHTML="hello2";
+}
+else{
+    greeting = "Good evening";
+}
+}
+
+
+</script>
+</body>
+</html>

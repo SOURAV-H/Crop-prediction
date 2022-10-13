@@ -1,0 +1,40 @@
+h3{
+    text-align: center;
+    background-color: orange;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+#fer,#l{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 340px;
+    padding-right: 340px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 20px;
+    background-color: yellow;
+}
+
+body{
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+    margin-top: 450px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: lightgreen;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+   padding: 9px;
+    
+}
+li a:hover{
+    background-color: orange;
+}

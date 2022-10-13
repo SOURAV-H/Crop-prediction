@@ -1,0 +1,79 @@
+body{
+    background-color:black;
+}
+
+.dashboard h1,h2
+{ 
+    background-color: rgb(115, 245, 104);
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-item {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: beige;
+  }
+
+  canvas{
+      padding-top: 100px;
+      padding-left: 150px;
+  }
+
+  .btn{
+      transition-duration: 0.3s;
+  }
+
+  .b1:hover{
+      background-color: rgb(223, 219, 219);
+      color: black;
+
+  }
+  .b2:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b3:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b4:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b5:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b6:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b7:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b8:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
+.b9:hover{
+    background-color: rgb(223, 219, 219);
+    color: black;
+
+}
